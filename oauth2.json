@@ -1,0 +1,11 @@
+{
+  "web": {
+    "client_id": "816061574847-5espq64qfv2aj3d18j2vndrc6b4h8g9h.apps.googleusercontent.com",
+    "project_id": "third-expanse-343617",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "javascript_origins": ["http://localhost:3000"]
+  }
+}
