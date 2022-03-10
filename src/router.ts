@@ -47,7 +47,12 @@ router.get('/contacts/create', async (req, res) => {
       phoneNumbers: [
         {
           type: 'mobile',
-          value: '4111267600',
+          value: '4111267601',
+        },
+      ],
+      organizations: [
+        {
+          name: 'Spammer',
         },
       ],
     },
