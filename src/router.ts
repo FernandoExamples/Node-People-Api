@@ -61,4 +61,20 @@ router.get('/contacts/create', async (req, res) => {
   return res.json(response);
 });
 
+router.get('/contacts/:contact', async (req, res) => {
+  const query = req.params.contact;
+
+  const { people } = google.people({
+    version: 'v1',
+    auth: oauth2Client,
+  });
+
+  const response = await people.searchContacts({
+    readMask: 'names,phoneNumbers',
+    query,
+  });
+
+  return res.json(response.data);
+});
+
 export default router;
